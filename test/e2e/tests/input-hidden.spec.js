@@ -1,8 +1,9 @@
 'use strict';
 
 describe('hidden thingy', function() {
-  it('should pass', function() {
-
+  xit('should pass', function() {
+    // Ignoring this test since it does not test angularjs.
+    // It tests the browser persistence of input field values (which was changed in recent years).
     loadFixture('input-hidden');
     expect(element(by.css('input')).getAttribute('value')).toEqual('');
 
